@@ -1,0 +1,467 @@
+/* ================= HERO (GOOGLE STANDARD) ================= */
+*{
+    padding: 0;
+    margin: 0; 
+    /* background-color: ; */
+  background-color: #101010;
+
+}
+.cont {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+/* Main wrapper */
+.main-cont {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: clamp(30px, 5vw, 70px);
+  padding: clamp(60px, 8vw, 120px) 5%;
+}
+
+/* Text + info wrapper */
+.total {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Headings */
+.heading {
+  max-width: 600px;
+}
+
+.heading h3 i {
+  color: #009862;
+  font-style: normal;
+}
+.heading h1 {
+  font-size: clamp(28px, 5vw, 52px);
+  line-height: 1.2;
+}
+
+.heading p {
+  margin-top: 10px;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+/* Button */
+.btn button {
+  margin-top: 25px;
+  width: 160px;
+  height: 50px;
+  border: none;
+  background-color: #009862;
+  cursor: pointer;
+}
+
+/* Info boxes */
+.info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 80%;
+}
+.info .bo-1 {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #555;
+  border-radius: 6px;
+}
+
+/* Image */
+.image {
+  display: flex;
+  justify-content: center;
+}
+.image img {
+  width: 100%;
+  max-width: clamp(240px, 35vw, 380px);
+  height: auto;
+  object-fit: cover;
+}
+
+/* ================= MOBILE POLISH ================= */
+
+@media (max-width: 600px) {
+  .heading,
+  .total {
+    text-align: center;
+    align-items: center;
+  }
+.main-cont{
+flex-direction: column-reverse;
+}
+  .btn button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image {
+    order: -1;
+  }
+}
+/* Tablets */
+@media (max-width: 900px) {
+  .info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =============================== */
+/* SECTION */
+/* DIVIDER */
+#head-2 p{
+    line-height: 20px;
+    padding:20px;
+    text-align: center;
+}
+hr {
+  margin: 10px 0;
+  border: none;
+  height: 1px;
+  background-color: #333;
+}
+
+/* ============Services============== */
+.services {
+  padding: clamp(10px, 8vw, 120px) 5%;
+  text-align: center;
+  color: #fff;
+}
+
+/* SECTION TITLE */
+.services h2 {
+  font-size: clamp(24px, 4vw, 34px);
+  margin-bottom: clamp(40px, 6vw, 70px);
+  font-weight: 600;
+}
+
+/* GRID */
+.services-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(25px, 4vw, 50px);
+}
+
+/* CARD */
+.service-card {
+  padding: 32px 26px;
+  /* border-radius: 14px; */
+  /* background-color: #3a3a3a; */
+  box-shadow: 0 8px 20px rgba(212, 209, 209, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ICON */
+.service-card i {
+  font-size: 42px;
+  color: #009862;
+  margin-bottom: 18px;
+}
+
+/* TITLE */
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* DESCRIPTION */
+.service-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* HOVER (Material-style) */
+.service-card:hover {
+  transform: translateY(-6px);
+  /* box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35); */
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 480px) {
+  .service-card {
+    padding: 26px 20px;
+  }
+}
+/* ============resume =========================== */
+/* ================= CONTACT ================= */
+
+#contact{
+  display: flex;
+  justify-content: center;
+}
+
+#full{
+  width: 85%;
+  margin: 60px auto;
+  background: #ffffff;
+  display: flex;
+  gap: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form{
+  padding: 40px;
+  width: 50%;
+  color: #202124;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+label{
+  font-size: 14px;
+  color: #5f6368;
+}
+
+form input,
+#msg{
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #202124;
+  background: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input:focus,
+#msg:focus{
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26,115,232,0.15);
+}
+
+#msg{
+  height: 150px;
+  resize: none;
+}
+
+#relate{
+  width: 50%;
+  padding: 40px;
+  color: #5f6368;
+}
+
+/* ================= RESUME ================= */
+/* ================= GLOBAL ================= */
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", Arial, sans-serif;
+  background: #ffffff;
+  color: #202124;
+} */
+
+/* ================= CONTACT ================= */
+
+#contact{
+  display: flex;
+  justify-content: center;
+}
+
+#full{
+  width: 85%;
+  margin: 60px auto;
+  background: #ffffff;
+  display: flex;
+  gap: 40px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.form{
+  padding: 40px;
+  width: 50%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+label{
+  font-size: 14px;
+  color: #5f6368;
+}
+
+form input,
+#msg{
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #202124;
+  background: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+form input::placeholder,
+#msg::placeholder{
+  color: #9aa0a6;
+}
+
+form input:hover,
+#msg:hover{
+  border-color: #b0b0b0;
+}
+
+form input:focus,
+#msg:focus{
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26,115,232,0.15);
+}
+
+#msg{
+  height: 150px;
+  resize: none;
+}
+
+#relate{
+  width: 50%;
+  padding: 40px;
+  color: #5f6368;
+}
+
+/* ================= RESUME ================= */
+#contact{
+  display: flex;
+  justify-content: center;
+}
+
+#full{
+  width: 100%;
+  margin: 60px auto;
+  background-color: #0e0d0d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.form{
+  color: #009862;
+  padding: 40px;
+  width: 100%;
+  /* box-shadow: 0 8px 20px rgba(212, 209, 209, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease; */
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label{
+  font-size: 16px;
+}
+
+form input,
+#msg{
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  color: #009862;
+  background: transparent;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+#msg{
+  height: 150px;
+  resize: none;
+}
+
+#relate{
+  width:100%;
+  padding: 40px;
+}
+/* ========================resume==========================================*/
+#res{
+  display: flex;
+  justify-content: center;
+  background-color: #101010;
+  flex-wrap: wrap;
+  color: #fff;
+  margin-top: 100px;
+  padding: 80px 0;
+}
+
+#hea{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resume{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* top bar */
+.bar{
+  height: auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  border: 2px solid #918484;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* text colors */
+.date{
+  color: #009862;
+}
+
+/* education section */
+.eductions{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.eductions .boxes{
+  flex: 1;
+  min-width: 280px;
+  border: 2px solid #918484;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(212, 209, 209, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  line-height: 1.8;
+}
+
+/* adjust it all and make it responsible */

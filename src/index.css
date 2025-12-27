@@ -1,0 +1,317 @@
+
+/* ================= GLOBAL ================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2a2a2a;
+}
+
+/* ================= NAVBAR ================= */
+
+.box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 0 30px;
+  z-index: 1000;
+}
+
+.img {
+  width: auto;
+}
+
+.img h2 {
+  color: #1f7250;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 450;
+  cursor: pointer;
+}
+
+.nav a:hover {
+  color: #009862;
+}
+
+/* Fix anchor scroll under navbar */
+section {
+  scroll-margin-top: 110px;
+}
+
+/* ================= HERO ================= */
+.main-cont,.cont {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding-top: 50px;
+}
+
+h3 i{
+  color: #009862;
+}
+.heading{
+margin-left: 100px;
+margin-right: 100px;
+margin-top: 50px;
+line-height:60px;
+}
+.heading h1{
+  font-size: 50px;
+}
+.info
+{
+ width:100%;
+height: 100px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+line-height: 30px;
+}
+.main-div{
+  min-height: 100vh;
+  display: flex;
+width: 800px;
+flex-wrap: wrap;
+}
+.btn button {
+  width: 160px;
+  height: 50px;
+  border: none;
+  margin-top: 30px;
+  background-color: #009862;
+  cursor: pointer;
+}
+p{
+  font-size: large;
+}
+.image {
+  width: 30%;
+  margin-left: 20px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ================= ABOUT ================= */
+
+#cont-2 {
+  background-color: #101010;
+  padding:0px;
+  margin: 0;
+
+}
+#img{
+  height: 500px;
+  width: 500px;
+}
+#button{
+  margin-bottom:100px;
+  margin-left: 5px;
+  margin-right: 500px;
+}
+#head-2 {
+line-height:35px;
+margin-top: 60px;
+} 
+#head-2 h1{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+#main-div1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#reminders {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100px;
+  gap: 20px;
+}
+hr {
+  margin-top: 40px;
+}
+
+/* ================= SERVICES ================= */
+
+.services {
+  min-height: 100vh;
+  /* padding: 120px 40px; */
+  margin: 40px;
+  text-align: center;
+  background-color: #2a2a2a;
+}
+
+.services h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 70px;
+}
+
+.service-card {
+  padding: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  background-color: #3a3a3a;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.service-card i {
+  font-size: 42px;
+  color: #009862;
+  margin-bottom: 18px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/*             contact           */
+#contact{
+  display: flex;
+  justify-content: center;
+}
+
+#full{
+  width: 85%;
+  margin: 60px auto;
+  background-color: #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.form{
+  color: #009862;
+  padding: 40px;
+  width: 50%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label{
+  font-size: 16px;
+}
+
+form input,
+#msg{
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  color: #009862;
+  background: transparent;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+#msg{
+  height: 150px;
+  resize: none;
+}
+
+#relate{
+  width: 70%;
+  padding: 40px;
+}
+/* ========================resume==========================================*/
+#res{
+  display: flex;
+  justify-content: center;
+  background-color: #101010;
+  margin-top: 100px;
+  padding: 80px 0;
+}
+
+#hea{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resume{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* top bar */
+.bar{
+  height: auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  border: 2px solid #918484;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* text colors */
+.date{
+  color: #009862;
+}
+
+/* education section */
+.eductions{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.eductions .boxes{
+  flex: 1;
+  min-width: 280px;
+  border: 2px solid #918484;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+/* adjust it all and make it responsible */
